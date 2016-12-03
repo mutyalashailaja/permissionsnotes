@@ -1,0 +1,21 @@
+a) What is the difference between Internal Storage & External Storage?When building an app that uses the internal storage, the Android OS creates a unique folder, which will only be accessible from the app, so no other app, or even the user, can see what's in the folder.
+
+The external storage is more like a public storage, so for now, it's the sdcard, but could become any other type of storage (remote hard drive, or anything else).
+
+The internal storage should only be used for application data, (preferences files and settings, sound or image media for the app If you intent to download many mp3s, 
+i'd reccomend saving them to external storage, as the external storage is often bigger. 
+Besides, storing data on the internal storage may prevent the user to install other 
+applications.
+
+
+
+b) For how long the data resides in the cache?
+
+
+
+c) What are the critical Permissions and Normal Permissions? What are the
+examples of each?
+
+Many permissions are designated as PROTECTION_NORMAL, which indicates that there's no great risk to the user's privacy or security in letting apps have those permissions. For example, users would reasonably want to know whether an app can read their contact information, so users have to grant this permission explicitly. By contrast, there's no great risk in allowing an app to vibrate the device, so that permission is designated as normal.
+
+If an app declares in its manifest that it needs a normal permission, the system automatically grants the app that permission at install time. The system does not prompt the user to grant normal permissions, and users cannot revoke these permissions.
